@@ -1,0 +1,46 @@
+*	{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;	
+    outline: 1px solid red;
+    }
+
+
+
+.main-container {
+    background-color: white;
+    width: 966px;
+    padding: 0 32px;
+    margin: auto;
+    }
+
+.main-header {
+    display: flex;
+    padding: 30px 24px;
+    width: 100%;
+    }
+
+.main-nav a + a {
+    margin-left: 24px;
+    te
+    }
+.main-nav {
+    margin-top: auto;
+    margin-left: auto;
+    padding-bottom: 10px;
+    }
+
+.prod-slider {
+    position: relative;
+    }
+.prod-slider img {
+    width: 100%;
+    max-width: 100%;
+    }
+
+.slider-frame {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    }

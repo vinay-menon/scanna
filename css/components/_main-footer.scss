@@ -1,0 +1,23 @@
+.main-footer {
+    background-color: #4d2e19;
+    background-image: url(../images/teeth-bottom.png);
+    background-repeat: repeat-x;
+
+    width: 100%;
+    max-width: 900px;
+    
+    margin: auto;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: center;
+    }
+
+.social-media {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    }
+.social-media a {
+    text-decoration: none;
+    }

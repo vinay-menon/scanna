@@ -1,0 +1,54 @@
+.main-header {
+    display: flex;
+    padding-bottom: 32px;
+    width: 100%;
+    margin-top: 96px;
+    position: relative;
+
+   &:before {
+        content: '';        
+        background-image: url(../images/teeth-top.png);
+        background-repeat: repeat-x;
+        background-position: top 0;
+        position: absolute;
+        top: -46px;
+        left: -32px;
+        right: -32px;
+        height: 48px;
+        }
+    }
+
+@media(max-width: 634px){
+    .main-header {
+        flex-direction: column;
+        }
+    }
+
+
+@media(max-width: 634px){
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+        }
+    }
+@media(max-width: 466px){
+    .logo {
+        margin-bottom: 0;
+        }
+    }
+
+// @media (max-width: 1028px){
+//     .logo {
+//         margin-left: 60px;
+//         }
+//     }
+// @media (max-width: 940px) {
+//     .logo {
+//         margin-left: 100px;
+//         }
+//     }
+
+
+
+
