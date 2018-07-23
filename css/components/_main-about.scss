@@ -86,3 +86,21 @@ aside {
             }
         }
     }
+
+@media (max-width: 410px) {
+    .about-content {
+        flex-direction: column;
+        }
+    
+    .profile-pic {
+        margin-right: 0;
+        margin: auto;
+        width: 240px;
+
+        }
+        .about-text h3 {
+            text-align: center;
+        }
+
+    
+}

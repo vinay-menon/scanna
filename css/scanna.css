@@ -203,7 +203,8 @@ hr {
   .prod-item-desc-hover {
     position: static;
     color: #1c0202;
-    background-color: none;
+    background-color: white;
+    padding: 10px;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -459,6 +460,23 @@ aside img {
   }
   aside img {
     padding-top: 12px;
+  }
+}
+
+@media (max-width: 410px) {
+  .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile-pic {
+    margin-right: 0;
+    margin: auto;
+    width: 240px;
+  }
+  .about-text h3 {
+    text-align: center;
   }
 }
 
