@@ -501,13 +501,30 @@ aside img {
           justify-content: space-between;
 }
 
-.shop-image img {
-  width: calc(50%-12px/2);
+.shop-map {
+  width: calc(50% - 12px/2);
+  margin-bottom: 36px;
+}
+
+.shop-map img {
   max-width: 100%;
   width: 100%;
 }
 
-* {
-  outline: 1px solid red;
+@media (max-width: 686px) {
+  .shop-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shop-map {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .shop-map img {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=scanna.css.map */

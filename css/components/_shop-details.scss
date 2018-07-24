@@ -1,14 +1,32 @@
-
 .shop-details {
     display: flex;
     justify-content: space-between;
 }
 
-.shop-image{ 
-    width: calc(50%-12px/2);
-}
+.shop-map {  
+    width: calc(50% - 12px/2);
+    margin-bottom: 36px;
 
-.shop-image img{
+   img {
     max-width: 100%;
     width: 100%;
+    }
 }
+
+ @media (max-width: 686px) {
+     .shop-details 
+     {
+     flex-direction: column;
+     }
+
+    .shop-map {  
+    width: 100%;
+    margin-bottom: 12px;
+
+    img {
+    max-width: 100%;
+    width: 100%;
+    }
+}
+
+ }
