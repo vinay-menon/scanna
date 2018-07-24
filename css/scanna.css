@@ -264,6 +264,7 @@ hr {
   }
   .qb-intro-image img {
     max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -443,7 +444,6 @@ aside img {
     max-width: 100%;
   }
   .about-text {
-    padding: 12px;
     margin: 0 0 0 0;
   }
   .about-text h3 {
@@ -490,5 +490,24 @@ aside img {
 
 .section-seperator.section-seperator--eop {
   margin-bottom: 0;
+}
+
+.shop-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shop-image img {
+  width: calc(50%-12px/2);
+  max-width: 100%;
+  width: 100%;
+}
+
+* {
+  outline: 1px solid red;
 }
 /*# sourceMappingURL=scanna.css.map */

@@ -1,0 +1,14 @@
+
+.shop-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-image{ 
+    width: calc(50%-12px/2);
+}
+
+.shop-image img{
+    max-width: 100%;
+    width: 100%;
+}
