@@ -1,0 +1,24 @@
+label {
+	margin-bottom: 24px;
+	display: block;
+	}
+
+.label-text {
+	font-size: .9rem;
+	}
+
+input, textarea {
+	padding: 5px;
+	// specify the font-family of your choice below, otherwise textarea will default to monospace font
+	font-family: sans-serif;
+	width: 100%;
+	}
+
+button {
+	width: 120px;
+	padding: 10px;
+	// change the bg-color to suit the theme
+	background-color: yellow;
+	
+	border: none;	
+	}

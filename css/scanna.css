@@ -527,4 +527,26 @@ aside img {
     width: 100%;
   }
 }
+
+label {
+  margin-bottom: 24px;
+  display: block;
+}
+
+.label-text {
+  font-size: .9rem;
+}
+
+input, textarea {
+  padding: 5px;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+button {
+  width: 120px;
+  padding: 10px;
+  background-color: yellow;
+  border: none;
+}
 /*# sourceMappingURL=scanna.css.map */
