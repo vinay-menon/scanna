@@ -1,6 +1,17 @@
+.contact-details {
+	display: flex;
+
+}
+form {
+	width: calc(100% - 300px);
+	padding-right: 36px;
+
+}
+
 label {
 	margin-bottom: 24px;
 	display: block;
+	
 	}
 
 .label-text {
@@ -9,7 +20,6 @@ label {
 
 input, textarea {
 	padding: 5px;
-	// specify the font-family of your choice below, otherwise textarea will default to monospace font
 	font-family: sans-serif;
 	width: 100%;
 	}
@@ -17,8 +27,32 @@ input, textarea {
 button {
 	width: 120px;
 	padding: 10px;
-	// change the bg-color to suit the theme
-	background-color: yellow;
+	background-color: rgb(169, 169, 169);
 	
 	border: none;	
 	}
+
+.address-details {
+	width: 300px; 
+	padding: 12px;
+	background-color:rgba(225, 223, 223, 0.535);
+}
+
+.address-details h3 {
+	padding-bottom: 12px;
+}
+
+.address p {
+	line-height: 1.5rem;
+}
+.address-map {
+	margin: auto;
+	padding-top: 30px;
+
+
+
+	img {
+		width: 100%;
+		padding: 0;
+	}
+}

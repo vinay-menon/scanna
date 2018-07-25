@@ -528,6 +528,17 @@ aside img {
   }
 }
 
+.contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form {
+  width: calc(100% - 300px);
+  padding-right: 36px;
+}
+
 label {
   margin-bottom: 24px;
   display: block;
@@ -546,7 +557,31 @@ input, textarea {
 button {
   width: 120px;
   padding: 10px;
-  background-color: yellow;
+  background-color: darkgray;
   border: none;
+}
+
+.address-details {
+  width: 300px;
+  padding: 12px;
+  background-color: rgba(225, 223, 223, 0.535);
+}
+
+.address-details h3 {
+  padding-bottom: 12px;
+}
+
+.address p {
+  line-height: 1.5rem;
+}
+
+.address-map {
+  margin: auto;
+  padding-top: 30px;
+}
+
+.address-map img {
+  width: 100%;
+  padding: 0;
 }
 /*# sourceMappingURL=scanna.css.map */
