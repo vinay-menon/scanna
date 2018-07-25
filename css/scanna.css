@@ -534,9 +534,18 @@ aside img {
   display: flex;
 }
 
-form {
+.contact-details h3 {
+  padding-bottom: 12px;
+}
+
+.form-details {
   width: calc(100% - 300px);
   padding-right: 36px;
+}
+
+form {
+  width: 100%;
+  max-width: 100%;
 }
 
 label {
@@ -563,12 +572,8 @@ button {
 
 .address-details {
   width: 300px;
-  padding: 12px;
   background-color: rgba(225, 223, 223, 0.535);
-}
-
-.address-details h3 {
-  padding-bottom: 12px;
+  padding-left: 12px;
 }
 
 .address p {
@@ -583,5 +588,69 @@ button {
 .address-map img {
   width: 100%;
   padding: 0;
+}
+
+@media (max-width: 700px) {
+  .contact-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-details {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 36px;
+    padding-right: 0;
+  }
+  .address-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: white;
+  }
+  .address {
+    width: calc(50% - 12px/2);
+    padding: 12px;
+    background-color: rgba(225, 223, 223, 0.535);
+  }
+  .address-map {
+    width: calc(50% - 12px/2);
+    margin: 0;
+    padding-top: 0;
+    padding: 12px;
+    background-color: rgba(225, 223, 223, 0.535);
+  }
+}
+
+@media (max-width: 650px) {
+  .address-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+  }
+  .address {
+    padding: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(225, 223, 223, 0.535);
+  }
+  .address-map {
+    width: 100%;
+    margin: 0;
+    padding-top: 0;
+    padding: 12px;
+    background-color: rgba(225, 223, 223, 0.535);
+  }
 }
 /*# sourceMappingURL=scanna.css.map */
