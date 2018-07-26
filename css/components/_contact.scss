@@ -1,39 +1,36 @@
 .contact-details {
 	display: flex;
-	
-	
-	
+
 	h3 {
 	padding-bottom: 12px;
-}
+		}
+	}
 
-
-}
 .form-details {
 	width: calc(100% - 300px);
 	padding-right: 36px;
 
-}
-form {
+	}
+	form {
 	width:100%;
 	max-width: 100%;
-}
+		}
 
 label {
 	margin-bottom: 24px;
 	display: block;
 	
-	}
+		}
 
 .label-text {
 	font-size: .9rem;
-	}
+		}
 
 input, textarea {
 	padding: 5px;
 	font-family: sans-serif;
 	width: 100%;
-	}
+		}
 
 button {
 	width: 120px;
@@ -41,63 +38,65 @@ button {
 	background-color: rgb(169, 169, 169);
 	
 	border: none;	
-	}
+		}
 
 .address-details {
 	width: 300px; 
 	background-color:rgba(225, 223, 223, 0.535);
-	padding-left: 12px;
-}
+	padding: 12px 12px 0 12px;
+	
+	}
 
 
 
 .address p {
 	line-height: 1.5rem;
-}
+	}
+
 .address-map {
 	margin: auto;
 	padding-top: 30px;
 
-
-
 	img {
 		width: 100%;
-		padding: 0;
+		}
 	}
-}
 
 @media (max-width: 700px) {
 	.contact-details {
 	flex-direction: column;
-}
+		}
+
 .form-details {
 	width: 100%;
 	max-width: 100%;
 	margin-bottom: 36px;
 	padding-right: 0;
-}
+		}
+
 .address-details {
 	display: flex;
 	padding: 0;
 	width: 100%;
 	justify-content: space-between;	
 	background-color: white;
-}
+		}
 
 .address {
 	width: calc(50% - 12px/2);
 	// border: 1px solid red;
 	padding: 12px;
 	background-color:rgba(225, 223, 223, 0.535);
-}
+		}
+
 .address-map {
 	width: calc(50% - 12px/2);
 	margin: 0;
 	padding-top: 0;
 	padding: 12px;
 	background-color:rgba(225, 223, 223, 0.535);
-}
-}
+			}
+	}
 
 
 @media (max-width: 650px){
@@ -106,7 +105,7 @@ button {
 	padding: 0;
 	width: 100%;
 	background-color: white;
-}
+	}
 
 .address {
 	padding: 12px;
@@ -114,13 +113,14 @@ button {
 	width: 100%;
 	max-width: 100%;
 	background-color:rgba(225, 223, 223, 0.535);
-}
+	}
+
 .address-map {
 	width: 100%;
 	margin: 0;
 	padding-top: 0;
 	padding: 12px;
 	background-color:rgba(225, 223, 223, 0.535);
-}
+	}
 	
 }

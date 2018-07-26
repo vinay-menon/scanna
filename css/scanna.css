@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Chettan");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700,800,900");
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +16,13 @@ hr {
 }
 
 h1, h2, h3 {
-  font-family: 'Baloo+Chettan',sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+P {
+  font-family: poppins;
 }
 
 .main-container {
@@ -35,6 +40,7 @@ h1, h2, h3 {
 
 .main-heading--secondary {
   font-family: sans-serif;
+  text-transform: uppercase;
   padding: 24px 32px;
   color: white;
   text-shadow: 0 0 10px #000, 0 0 10px rgba(0, 0, 0, 0.3);
@@ -393,7 +399,6 @@ h1, h2, h3 {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 24px;
-  font-family: sans-serif;
 }
 
 .about-content {
@@ -405,10 +410,6 @@ h1, h2, h3 {
 
 .about-text {
   margin: 0 36px 0 24px;
-}
-
-.about-text h3 {
-  text-transform: capitalize;
 }
 
 .about-text abbr {
@@ -580,7 +581,7 @@ button {
 .address-details {
   width: 300px;
   background-color: rgba(225, 223, 223, 0.535);
-  padding-left: 12px;
+  padding: 12px 12px 0 12px;
 }
 
 .address p {
@@ -594,7 +595,6 @@ button {
 
 .address-map img {
   width: 100%;
-  padding: 0;
 }
 
 @media (max-width: 700px) {
