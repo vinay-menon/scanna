@@ -9,6 +9,8 @@
     width: calc(33.33% - 24px/3);
     position: relative;
     margin-bottom: 24px;
+    border: 2px solid rgb(157, 157, 157);
+    text-align: center;
     }
 
 @media (max-width: 604px) {
@@ -59,3 +61,11 @@
         transition: .3s;
         }
     }
+
+.prod-item:hover {
+    transform: scale(1.05, 1.05);
+    border: 2px solid black;
+    // background: #ff800a;
+    // box-shadow: 3px 3px 5px #000;
+    z-index: .5;
+}

@@ -53,6 +53,7 @@ P {
   display: flex;
   padding-bottom: 32px;
   width: 100%;
+  max-width: 100%;
   margin-top: 96px;
   position: relative;
 }
@@ -172,6 +173,8 @@ P {
   width: calc(33.33% - 24px/3);
   position: relative;
   margin-bottom: 24px;
+  border: 2px solid #9d9d9d;
+  text-align: center;
 }
 
 @media (max-width: 604px) {
@@ -230,6 +233,13 @@ P {
     -webkit-transition: .3s;
     transition: .3s;
   }
+}
+
+.prod-item:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  border: 2px solid black;
+  z-index: .5;
 }
 
 .qb-intro {
@@ -691,9 +701,5 @@ button {
     padding: 12px;
     background-color: rgba(225, 223, 223, 0.535);
   }
-}
-
-* {
-  outline: 1px solid red;
 }
 /*# sourceMappingURL=scanna.css.map */
