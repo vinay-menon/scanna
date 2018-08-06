@@ -519,6 +519,24 @@ aside img {
   width: 100%;
 }
 
+.aspect-ratio-10 {
+  position: relative;
+  height: 0%;
+  padding-top: 40%;
+  width: 50%;
+  overflow: hidden;
+  width: calc(50% - 12px/2);
+  margin-bottom: 36px;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 @media (max-width: 686px) {
   .shop-details {
     -webkit-box-orient: vertical;
@@ -532,6 +550,20 @@ aside img {
   }
   .shop-map img {
     max-width: 100%;
+    width: 100%;
+  }
+  .aspect-ratio-10 {
+    position: relative;
+    height: 0;
+    padding-top: 40%;
+    width: 100%;
+    overflow: hidden;
+  }
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
   }
 }
@@ -659,5 +691,9 @@ button {
     padding: 12px;
     background-color: rgba(225, 223, 223, 0.535);
   }
+}
+
+* {
+  outline: 1px solid red;
 }
 /*# sourceMappingURL=scanna.css.map */
