@@ -510,7 +510,7 @@ aside img {
   margin-bottom: 0;
 }
 
-.shop-details {
+.img-map {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,9 +719,5 @@ button {
     padding: 12px;
     background-color: rgba(225, 223, 223, 0.535);
   }
-}
-
-* {
-  outline: 1px solid red;
 }
 /*# sourceMappingURL=scanna.css.map */
