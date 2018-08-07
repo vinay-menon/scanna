@@ -33,48 +33,65 @@ iframe {
             width: 100%;
             }
 
-// .rashi-images {
-//     width: 100%;
-//     padding-bottom: 12px;
-//     background-color: rgb(220, 217, 217);
-//     }
-// .rashi {
-//     width: 100%;
-//     }
+.rashi-images {
+    width: 100%;
+    padding-bottom: 12px;
+    background-color: rgb(220, 217, 217);
+    }
+.rashi {
+    width: 100%;
+    }
 
-// .suprete {
-//     width: 100%;
-//     margin: auto;
-//     display: flex;
-//     height: 600px;
-//     margin-top: 12px;
+.suprete {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    height: 600px;
+    margin-top: 12px;
 
-//     }
+    }
 
-// .suprete img {
-//     width: 50%;
-//     margin-left: 12px;
-//     border: 2px solid rgba(255, 255, 255, 0.871);
-//     }
+.suprete img {
+    width: 50%;
+    margin-left: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.871);
+    }
 
-// .shopimg {
-//     margin-left: 12px;
-//     // background-color: black;
+.shopimg {
+    margin-left: 12px;
+    // background-color: black;
     
-// }
+}
 
-// .shopimg img {
-//     margin-bottom: 15px;
-// }
-// .shopimg img {
-//     width: 88%;
-//     margin-left: 25px;
-//     }
+.shopimg img {
+    margin-bottom: 15px;
+}
+.shopimg img {
+    width: 88%;
+    margin-left: 25px;
+    }
 
 
 
 
  @media (max-width: 686px) {
+
+
+.img-map {
+    display: block;
+    }
+
+.shop-map {  
+    margin-bottom: 36px;
+
+   img {
+    max-width: 100%;
+    width: 100%;
+        }
+    }
+
+
+     
      .shop-details 
      {
      flex-direction: column;
@@ -91,7 +108,7 @@ iframe {
     }
 .aspect-ratio-10 {
             position: relative;
-            height: 0;
+            height: 300px;
             padding-top: 40%;
             width: 100%;
             overflow: hidden;
