@@ -592,6 +592,8 @@ iframe {
   }
   .shop-map {
     margin-bottom: 36px;
+    width: 100%;
+    max-width: 100%;
   }
   .shop-map img {
     max-width: 100%;
@@ -768,9 +770,5 @@ button {
     padding: 12px;
     background-color: rgba(225, 223, 223, 0.535);
   }
-}
-
-* {
-  outline: 1px solid red;
 }
 /*# sourceMappingURL=scanna.css.map */
