@@ -121,9 +121,6 @@ P {
   height: 30px;
   text-align: center;
   line-height: 30px;
-}
-
-.dropdown {
   color: #4d2e19;
   position: relative;
   display: inline-block;
@@ -142,11 +139,11 @@ P {
 }
 
 .dropdown-content a {
+  display: block;
   color: #4d2e19;
   padding: 11px 12px;
   text-decoration: none;
-  display: block;
-  line-height: 1.01rem;
+  line-height: 20px;
 }
 
 .dropdown-content a + a {
