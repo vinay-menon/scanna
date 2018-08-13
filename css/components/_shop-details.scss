@@ -18,24 +18,24 @@
     }
 
 .aspect-ratio-10 {
-            position: relative;
-            height: 0%;
-            padding-top: 40%;
-            width: 50%;
-            overflow: hidden;
-            width: calc(50% - 12px/2);
-            margin-bottom: 36px;
-            }
+    position: relative;
+    height: 0%;
+    padding-top: 40%;
+    width: 50%;
+    overflow: hidden;
+    width: calc(50% - 12px/2);
+    margin-bottom: 36px;
+    }
 iframe {
-            position: absolute;
-            top: 0; left: 0;
-            height: 100%;
-            width: 100%;
-            }
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    }
 
 .rashi-imag {
     width: 100%;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
     // background-color: rgb(220, 217, 217);
     }
 
@@ -53,61 +53,52 @@ iframe {
     }
 
  @media (max-width: 686px) {
-
-
-.img-map {
-    display: block;
-    }
-
-.shop-map {  
-    margin-bottom: 36px;
-    width: 100%;
-    max-width: 100%;
-
-   img {
-    max-width: 100%;
-    width: 100%;
+    .img-map {
+        display: block;
         }
-    }
 
-.shop-details 
-     {
-     flex-direction: column;
-     }
+    .shop-map {  
+        margin-bottom: 36px;
+        width: 100%;
+        max-width: 100%;
 
-.shop-map {  
-    width: 100%;
-    margin-bottom: 12px;
-
-img {
-    max-width: 100%;
-    width: 100%;
-    } 
-        }
-.aspect-ratio-10 {
-            position: relative;
-            height: 300px;
-            padding-top: 40%;
+        img {
+            max-width: 100%;
             width: 100%;
-            overflow: hidden;
             }
-    iframe {
-            position: absolute;
-            top: 0; left: 0;
-            height: 100%;
+        }
+
+    .shop-details {
+        flex-direction: column;
+        }
+
+    .shop-map {  
+        width: 100%;
+        margin-bottom: 12px;
+
+        img {
+            max-width: 100%;
             width: 100%;
-            }  
+            } 
+        }
 
-.rashi-imag {
-    width: 100%;
-    height: 0;
-    padding-bottom: 12px;
-    // background-color: rgb(220, 217, 217);
-    }
+    .aspect-ratio-10 {
+        position: relative;
+        height: 300px;
+        padding-top: 40%;
+        width: 100%;
+        overflow: hidden;
+        }
+    iframe {
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%;
+        width: 100%;
+        }  
 
-.rashi {
-    width: 100%;
-    max-width: 100%;
-    }      
+    .rashi-imag {
+        width: 100%;
+        padding-bottom: 12px;
+        }    
 
         }
