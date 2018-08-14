@@ -24,8 +24,7 @@
 .is-active {
     border-bottom: 2px solid brown;
     }
-
-
+    
 .dropdown-content {
     position: absolute;
     min-width: 200px;
@@ -50,6 +49,10 @@
     line-height: 20px;
     }
 
+.dropdown img {
+    width: 12px;
+    }
+
 .dropdown-content a:hover {
     background-color: #3d3d3d2c;
     }
@@ -58,10 +61,6 @@
     // display: block;
     opacity: 1;
     pointer-events: auto;
-    }
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
     }
 
 @media(max-width: 634px){

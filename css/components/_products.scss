@@ -46,6 +46,11 @@
         opacity: 1;
         visibility: visible;
         }
+
+.prod-item:hover {
+    border: 2px solid rgb(70, 13, 13);
+    z-index: .5;
+    }
     
 @media (max-width: 686px) {
     .prod-item-desc-hover {
@@ -62,10 +67,3 @@
         }
     }
 
-.prod-item:hover {
-    transform: scale(1.05, 1.05);
-    border: 2px solid black;
-    // background: #ff800a;
-    // box-shadow: 3px 3px 5px #000;
-    z-index: .5;
-}

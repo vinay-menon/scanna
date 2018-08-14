@@ -150,6 +150,10 @@ P {
   line-height: 20px;
 }
 
+.dropdown img {
+  width: 12px;
+}
+
 .dropdown-content a:hover {
   background-color: #3d3d3d2c;
 }
@@ -157,10 +161,6 @@ P {
 .dropdown:hover .dropdown-content {
   opacity: 1;
   pointer-events: auto;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
 }
 
 @media (max-width: 634px) {
@@ -264,7 +264,7 @@ P {
 }
 
 @media (max-width: 686px) {
-  .prod-item-desc-hover {
+  .disply-item-desc-hover {
     position: static;
     color: #1c0202;
     background-color: white;
@@ -341,6 +341,11 @@ P {
   visibility: visible;
 }
 
+.prod-item:hover {
+  border: 2px solid #460d0d;
+  z-index: .5;
+}
+
 @media (max-width: 686px) {
   .prod-item-desc-hover {
     position: static;
@@ -359,13 +364,6 @@ P {
     -webkit-transition: .3s;
     transition: .3s;
   }
-}
-
-.prod-item:hover {
-  -webkit-transform: scale(1.05, 1.05);
-          transform: scale(1.05, 1.05);
-  border: 2px solid black;
-  z-index: .5;
 }
 
 .qb-intro {
@@ -681,6 +679,17 @@ iframe {
 .rashi {
   width: 100%;
   max-width: 100%;
+  padding-bottom: 45px;
+}
+
+.magzen-pages {
+  margin: auto;
+  width: 90%;
+}
+
+.magzen-pages img {
+  width: 100%;
+  padding-bottom: 40px;
 }
 
 .suprete {
@@ -690,7 +699,7 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   height: 600px;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 @media (max-width: 686px) {
