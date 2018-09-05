@@ -2,7 +2,12 @@
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom:48px; 
+    margin-bottom:20px; 
+    // padding: 50px 0 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: sans-serif;
     }
 
 .disply-item {
@@ -10,8 +15,9 @@
     position: relative;
     margin-bottom: 24px;
     // border: 2px solid rgb(157, 157, 157);
-    text-align: center;
+    
     }
+
 
 @media (max-width: 604px) {
     .disply-item {
