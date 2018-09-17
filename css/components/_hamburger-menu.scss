@@ -1,0 +1,122 @@
+.menu-trigger {
+  width: 36px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  margin-left: auto;
+  padding: 5px;
+  display: none;
+  }
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: grey;
+  margin-bottom: 6px;
+  transition: 0.4s;  
+  position: absolute;
+  top: 0; 
+  left: 0;
+  transition: .2s;
+  }
+.bar:nth-child(2) {
+  top: 10px;
+  }
+.bar:last-child {
+  top: auto;
+  bottom: 0;
+  }
+
+@media (max-width: 700px) {
+    .main-nav {
+      padding-bottom: 0; 
+      padding: 15px;
+      flex-direction: column;
+      position: absolute;
+      z-index: 999;
+      right: -20px;
+      top: calc(50% + 10px);
+      background-color: white;
+      box-shadow: 0 0 30px #999;
+      border-radius: 10px;
+      opacity: 0;
+      pointer-events: none;
+      transition: .5s;
+
+      &::before {
+        content: "";
+        position: absolute;
+        border-bottom: 10px solid white;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        top: -10px;
+        right: 28px;
+        }
+      }
+    .nav-link {
+      text-align: left;
+
+      + .nav-link {
+        margin-top: 6px;
+        }
+      }
+  .is-active {
+      border-bottom: 0;
+      background-color: rgba(204, 204, 204, 0.289);
+      }
+    .menu-trigger {
+      display: block;
+      margin: auto 0;
+      }  
+
+    .dropdown-content {
+      position: relative;
+      min-width: auto;
+
+      transform: none;
+      box-shadow: none;
+      pointer-events: auto;
+      opacity: 1;
+      background-color: #e9e7e738;
+      border-radius: 0;
+      margin-top: 0;
+      }
+    
+    .dropdown img {
+        display: none;
+        }
+
+    .dropdown-content a {
+      display: block;
+      color: #61391e;
+      padding: 6px;
+      font-size: .9rem;
+      padding-left: 24px;
+      }
+
+    .nav-link + .nav-link  {
+      margin-left: 0;
+      }
+
+    .menu-open {
+      .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        }
+      .bar:first-child {
+        top: 10px;
+        transform: rotate(-45deg);
+        }
+      .bar:nth-child(2) {
+        opacity: 0;
+        }
+      .bar:last-child {
+        bottom: 10px;
+        transform: rotate(45deg);
+        }
+    }
+
+
+    
+
+    }

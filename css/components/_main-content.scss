@@ -3,13 +3,16 @@
     width: 100%;
     max-width: 999px;
     margin: auto;
-    padding-left: 32px;
-    padding-right: 32px;
-    
+    padding-left: 64px;
+    padding-right: 64px;
     }
 
 
-@media (max-width: 900px) {
+@media (max-width: 749px) {
+    .main-container {
+        padding-left: 32px;
+        padding-right: 32px;
+        }
     }
 
 
