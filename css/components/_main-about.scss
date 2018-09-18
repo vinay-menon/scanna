@@ -42,6 +42,13 @@ aside {
         }
     }
 
+    @media (max-width: 749px) {
+    .main-header:before {
+        left: -32px;
+        right: -32px;
+        }
+    }
+
 @media (max-width: 686px){
     .main-about{
         flex-direction: column;
@@ -53,7 +60,8 @@ aside {
     
     .profile-pic {
         margin-right: 24px;
-        width: 240px;
+        flex-shrink: 0;
+        width: 180px;
 
         img {
             width: 100%;
