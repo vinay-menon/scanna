@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Chettan");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
 * {
   margin: 0;
   padding: 0;
@@ -47,16 +48,15 @@ P {
 }
 
 .main-heading--secondary {
-  background-color: #e9bf65;
+  border-bottom: 4px solid #e9bf65;
+  color: inherit;
   text-transform: capitalize;
-}
-
-.main-heading--secondary {
-  font-family: sans-serif;
-  text-transform: uppercase;
-  padding: 24px 32px;
-  color: white;
-  font-size: 24px;
+  font-family: 'Satisfy', cursive;
+  padding: 24px 32px 12px 0;
+  text-align: center;
+  color: #3b2c0c;
+  font-size: 2.2rem;
+  font-weight: normal;
   margin-bottom: 48px;
 }
 
@@ -138,7 +138,7 @@ P {
 }
 
 .is-active {
-  border-bottom: 2px solid brown;
+  border-bottom: 2px solid #e9bf65;
 }
 
 .dropdown-content {
@@ -173,7 +173,7 @@ P {
 }
 
 .dropdown-content a:hover {
-  background-color: #3d3d3d;
+  background-color: #e9bf65;
 }
 
 .dropdown:hover .dropdown-content {
@@ -725,6 +725,13 @@ aside img {
   }
 }
 
+@media (max-width: 520px) {
+  .profile-pic {
+    width: 140px;
+    padding-bottom: 12px;
+  }
+}
+
 .section-seperator {
   background-image: url(../images/line.png);
   background-position: 50% 50%;
@@ -906,8 +913,18 @@ button {
 .address p {
   line-height: 1.5rem;
   font-family: sans-serif;
+  font-size: .9rem;
+}
+
+.address-name {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  display: block;
+}
+
+.address-name_sec {
+  text-transform: capitalize;
   font-weight: bold;
-  font-size: 11px;
 }
 
 .address-map {
