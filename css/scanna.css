@@ -188,12 +188,6 @@ P {
   }
 }
 
-@media (max-width: 466px) {
-  .main-nav {
-    display: none;
-  }
-}
-
 .menu-trigger {
   width: 36px;
   height: 30px;
