@@ -271,7 +271,7 @@ P {
             transform: none;
     -webkit-box-shadow: none;
             box-shadow: none;
-    pointer-events: auto;
+    pointer-events: none;
     opacity: 1;
     background-color: #e9e7e738;
     border-radius: 0;
