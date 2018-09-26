@@ -868,8 +868,9 @@ iframe {
   display: flex;
 }
 
-.contact-details h3 {
+.contact-details h2 {
   padding-bottom: 12px;
+  font-size: .9rem;
 }
 
 .form-details {
