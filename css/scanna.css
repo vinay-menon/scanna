@@ -664,6 +664,14 @@ aside img {
   padding-top: 24px;
 }
 
+aside.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 @media (max-width: 749px) {
   .main-header:before {
     left: -32px;

@@ -42,6 +42,12 @@ aside {
         }
     }
 
+aside.sticky {
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+    }
+
     @media (max-width: 749px) {
     .main-header:before {
         left: -32px;
