@@ -503,6 +503,26 @@ P {
   margin-right: 32px;
 }
 
+.qb-intro-content p {
+  margin-bottom: 12px;
+}
+
+.cta-btn {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5da63), to(#e2cc84));
+  background-image: linear-gradient(#f5da63, #e2cc84);
+  background-color: #f1cb7a;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: bold;
+  color: #974b1e;
+  font-family: sans-serif;
+  padding: 12px;
+  border: 1px solid #75341c;
+  display: inline-block;
+  border-radius: 5px;
+}
+
 @media (max-width: 686px) {
   .qb-intro {
     -webkit-box-orient: vertical;
