@@ -5,6 +5,9 @@
     max-width: 100%;
     margin-top: 96px;
     position: relative;
+    transition: .3s margin-bottom;
+    background-color: inherit;
+    z-index: 9;
 
    &:before {
         content: '';        
@@ -16,6 +19,13 @@
         left: -64px;
         right: -64px;
         height: 48px;
+        }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0; bottom: 24px; right: 0; left: 0;
+        background-color: inherit;
+        z-index: -1;
         }
     }    
 @media (max-width: 749px) {
@@ -50,6 +60,9 @@
         margin-bottom: 0;
         }
     }
+
+
+    
 
 
 
