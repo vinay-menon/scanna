@@ -127,6 +127,13 @@ P {
   }
 }
 
+@media (max-width: 375px) {
+  .main-header {
+    margin-top: 0;
+    padding-top: 32px;
+  }
+}
+
 .main-nav {
   margin-top: auto;
   margin-left: auto;
@@ -796,7 +803,6 @@ P {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 32px;
   border-radius: 25px;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(245, 245, 62, 0)), to(#f5f57d));
   background-image: linear-gradient(90deg, rgba(245, 245, 62, 0) 50%, #f5f57d);
@@ -832,12 +838,34 @@ P {
 
 .about-intro-sp_text {
   font-size: 1rem;
+  padding-right: 32px;
 }
 
 @media (max-width: 394px) {
   .about-intro {
     padding: 32px 0;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 686px) {
+  .about-intro-sp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(245, 245, 62, 0)), to(#f5f57d));
+    background-image: linear-gradient(rgba(245, 245, 62, 0) 50%, #f5f57d);
+  }
+  .about-intro-sp_title {
+    margin: auto;
+    margin-bottom: 24px;
+  }
+  .about-intro-sp_text {
+    margin: auto;
+    text-align: center;
+    margin: 0 12px 32px 12px;
+    padding-right: 0;
   }
 }
 
