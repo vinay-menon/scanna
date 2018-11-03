@@ -99,6 +99,21 @@ P {
   z-index: -1;
 }
 
+.enquiry {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: sans-serif;
+  background-color: #ee8244;
+  color: #efffef;
+  border-top: 1px solid #88da88;
+  border-bottom: 1px solid #618f61;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-shadow: 1px 0 0px rgba(34, 34, 34, 0.534);
+  font-size: .9rem;
+}
+
 @media (max-width: 749px) {
   .main-header:before {
     left: -32px;
@@ -114,6 +129,28 @@ P {
   margin: auto;
 }
 
+@media (max-width: 700px) {
+  .header-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .logo {
+    margin-bottom: 12px;
+  }
+  .enquiry {
+    position: static;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
 @media (max-width: 634px) {
   .logo {
     margin-left: auto;
@@ -127,7 +164,7 @@ P {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 700px) {
   .main-header {
     margin-top: 0;
     padding-top: 24px;
@@ -323,17 +360,15 @@ P {
     display: block;
     margin: auto 0;
   }
+  .dropdown {
+    pointer-events: none;
+  }
   .dropdown-content {
-    position: absolute;
-    min-width: 200px;
-    -webkit-transform: translateX(-59px);
-            transform: translateX(-59px);
+    position: static;
+    display: block;
     -webkit-transform-origin: center center;
             transform-origin: center center;
-    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.46);
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.46);
-    pointer-events: none;
-    opacity: 0;
+    pointer-events: auto;
     z-index: 99;
     -webkit-transition: opacity .5s;
     transition: opacity .5s;
@@ -347,6 +382,7 @@ P {
     color: #4d2e19;
     padding: 11px;
     text-decoration: none;
+    background-image: none !important;
   }
   .dropdown img {
     width: 12px;
