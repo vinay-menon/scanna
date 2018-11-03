@@ -66,14 +66,11 @@
         padding-right: 32px;
         }
 
-@media (max-width: 394px) {
-    .about-intro {
-        padding: 32px 0;
-        font-size: 1rem;
-        }}
-
 
 @media (max-width: 686px){
+    .about-intro{
+        margin-top: 32px;
+    }
     .about-intro-sp{
         flex-direction: column;
         background-image: 
@@ -91,5 +88,12 @@
         text-align: center;
         margin: 0 12px 32px 12px;
         padding-right: 0;
+        line-height: 1.6;
         }    
     }
+
+    @media (max-width: 394px) {
+    .about-intro {
+        padding: 32px 0;
+        font-size: 1rem;
+        }}
