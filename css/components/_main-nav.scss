@@ -2,10 +2,8 @@
     margin-top: auto;
     // width: 400px;
     margin-left: auto;
-    padding-bottom: 10px; 
     display: flex;
-    }
-    
+    }  
 .main-nav a {
     color: #61391e;
     text-decoration: none;
@@ -18,6 +16,8 @@
 .nav-link {
     text-decoration: none;
     font-family: sans-serif;
+    font-family: serif;
+    font-family: 'Playfair Display', serif;
     padding: 6px;
     text-align: center;
     }
@@ -44,43 +44,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #fff;
+    // font-weight: bold;
+    background-image: linear-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
+                );
+    
 }
 .dropdown-content a:first-child{
-    background-image: linear-gradient(
-                rgba(0, 0, 0, 0.452), 
-                rgba(106, 106, 106, 0.521)
+    background-image: radial-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
                 ),url(../images/bimage/drid.jpg );
     
 }
 .dropdown-content a:nth-child(2){
-    background-image: linear-gradient(
-                rgba(0, 0, 0, 0.452), 
-                rgba(106, 106, 106, 0.521)
+    background-image: radial-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
                 ),url(../images/bimage/nuts.jpg);
 }
 .dropdown-content a:nth-child(3){
-    background-image: linear-gradient(
-                rgba(0, 0, 0, 0.452), 
-                rgba(106, 106, 106, 0.521)
+    background-image: radial-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
                 ),url(../images/bimage/dri-frt-bg.jpg);
 }
 .dropdown-content a:nth-child(4){
-    background-image: linear-gradient(
-                rgba(0, 0, 0, 0.452), 
-                rgba(106, 106, 106, 0.521)
+    background-image:radial-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
                 ),url(../images/bimage/chocolate.jpg);
 }
 .dropdown-content a:nth-child(5){
-    background-image: linear-gradient(
-                rgba(0, 0, 0, 0.452), 
-                rgba(106, 106, 106, 0.521)
+    background-image: radial-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
                 ),url(../images/bimage/gift-bg.jpg);
 }
 .dropdown-content a:nth-child(6){
-    background-image: linear-gradient(
-                rgba(0, 0, 0, 0.452), 
-                rgba(106, 106, 106, 0.521)
+    background-image: radial-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
                 ),url(../images/bimage/biriyani-bg.jpg);
 }
 

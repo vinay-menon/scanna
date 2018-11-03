@@ -28,8 +28,6 @@
     }
 
 
-    
-
     @media (max-width: 604px) {
     .prod-item {
         width: 100%;
@@ -49,15 +47,15 @@
 @media (max-width: 686px) {
    .prod-item {
         width: calc(33.33% - 32px/3);
-    position: relative;
-    padding: 12px;
-    margin-top: 48px;
-    border: 2px solid rgb(198, 174, 64);
-    text-align: center;
-    transition: .1s;
+        position: relative;
+        padding: 12px;
+        margin-top: 48px;
+        border: 2px solid rgb(198, 174, 64);
+        text-align: center;
+        transition: .1s;
         }}
 
-        @media (max-width: 686px) {
+    @media (max-width: 686px) {
     .prod-item-desc-hover {
         position: static;
         color: rgb(28, 2, 2);
