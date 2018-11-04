@@ -78,13 +78,6 @@
 
 
 
-@media(max-width: 634px){
-    .logo {
-        margin-left: auto;
-        margin-right: auto;
-        // margin-bottom: 32px;
-        }
-    }
 @media(max-width: 466px){
     .logo {
         margin-bottom: 0;
@@ -97,6 +90,23 @@
         }
     }
 
+    @media(max-width: 414px){
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+
+        }
+    .enquiry{
+        position: static;
+        margin: 12px 0 12px 0;
+        align-self: center;
+        }
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        // margin-bottom: 32px;
+        }
+    }
     
 
 
