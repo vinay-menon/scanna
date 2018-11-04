@@ -476,6 +476,18 @@ P {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
+}
+
+.disply-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(rgba(119, 32, 32, 0.452), rgba(19, 2, 2, 0.582));
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
 
 @media (max-width: 600px) {
@@ -505,18 +517,20 @@ P {
   max-width: 100%;
   width: 100%;
   display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 10s ease-out;
+  transition: 10s ease-out;
 }
 
-.disply-item img:hover {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: scale(1.01, 1.01);
-          transform: scale(1.01, 1.01);
+.disply-item:hover img {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
 }
 
 .disply-item-desc-hover {
   position: absolute;
-  color: #f7ebc6;
+  color: rgba(255, 255, 255, 0.945);
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,12 +547,14 @@ P {
   transition: .3s;
   text-decoration: none;
   opacity: 1;
+  z-index: 2;
   visibility: visible;
+  font-family: poppins;
+  font-weight: normal;
 }
 
 @media (max-width: 686px) {
   .disply-item-desc-hover {
-    color: #1c0202;
     margin-left: -12px;
     color: #f7ebc6;
     margin-top: auto;
