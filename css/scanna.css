@@ -397,7 +397,7 @@ P {
     display: block;
     -webkit-transform-origin: center center;
             transform-origin: center center;
-    pointer-events: auto;
+    pointer-events: none;
     z-index: 99;
     -webkit-transition: opacity .5s;
     transition: opacity .5s;
@@ -428,6 +428,9 @@ P {
   }
   .menu-open .main-nav {
     opacity: 1;
+    pointer-events: auto;
+  }
+  .menu-open .dropdown-content {
     pointer-events: auto;
   }
   .menu-open .bar:first-child {
