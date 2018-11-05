@@ -16,18 +16,19 @@
 
     p {
     margin-bottom: 12px;
+    font-size: .8rem;
     }
     }
 
 .cta-btn {
-    background-image: linear-gradient(rgb(245, 218, 99),rgb(226, 204, 132));
-    background-color: rgb(241, 203, 122);
+    // background-image: linear-gradient(rgb(245, 218, 99),rgb(226, 204, 132));
+    background-color: #FF0000;
     text-transform: capitalize;
     text-decoration:none;
     font-size: .9rem;
     font-weight: bold;
     // text-shadow: 0 -1px 0 black;
-    color:rgb(151, 75, 30);
+    color:white;
     font-family: sans-serif;
     padding: 12px;
     border: 1px solid rgb(117, 52, 28);

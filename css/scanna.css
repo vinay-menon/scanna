@@ -198,6 +198,7 @@ P {
 .main-nav a {
   color: #61391e;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .nav-link + .nav-link {
@@ -214,7 +215,7 @@ P {
 }
 
 .is-active {
-  border-bottom: 2px solid #e9bf65;
+  border-bottom: 2px solid red;
 }
 
 .dropdown-content {
@@ -324,7 +325,7 @@ P {
 .bar {
   width: 100%;
   height: 2px;
-  background-color: grey;
+  background-color: #FF0000;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   position: absolute;
@@ -341,6 +342,14 @@ P {
 .bar:last-child {
   top: auto;
   bottom: 0;
+}
+
+.dropdown-content a {
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  background: #e71a1a;
 }
 
 @media (max-width: 700px) {
@@ -380,7 +389,6 @@ P {
     margin-top: 6px;
   }
   .is-active {
-    border-bottom: 0;
     background-color: rgba(204, 204, 204, 0.289);
   }
   .menu-trigger {
@@ -405,6 +413,7 @@ P {
     border-radius: 5px;
     overflow: hidden;
     margin-top: 5px;
+    font-weight: bold;
   }
   .dropdown-content a {
     display: block;
@@ -417,7 +426,8 @@ P {
     width: 12px;
   }
   .dropdown-content a:hover {
-    background-color: #e9bf65;
+    color: white;
+    background-color: #FF0000;
   }
   .dropdown:hover .dropdown-content {
     opacity: 1;
@@ -530,7 +540,6 @@ P {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: radial-gradient(rgba(119, 32, 32, 0.452), rgba(19, 2, 2, 0.582));
   height: 100%;
   width: 100%;
   z-index: 2;
@@ -565,18 +574,23 @@ P {
   display: block;
   position: relative;
   z-index: 1;
-  -webkit-transition: 10s ease-out;
-  transition: 10s ease-out;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .disply-item:hover img {
-  -webkit-transform: scale(1.5, 1.5);
-          transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .disply-item-desc-hover {
   position: absolute;
+  top: 10%;
+  left: 10%;
+  bottom: 10%;
+  right: 10%;
   color: rgba(255, 255, 255, 0.945);
+  background-color: rgba(251, 50, 0, 0.795);
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,8 +601,6 @@ P {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0;
-  visibility: hidden;
   -webkit-transition: .3s;
   transition: .3s;
   text-decoration: none;
@@ -601,16 +613,7 @@ P {
 
 @media (max-width: 686px) {
   .disply-item-desc-hover {
-    margin-left: -12px;
-    color: #f7ebc6;
-    margin-top: auto;
-    margin-bottom: 0;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    height: 50px;
-    opacity: 1;
-    visibility: visible;
+    font-size: 1.5rem;
   }
 }
 
@@ -732,17 +735,16 @@ P {
 
 .qb-intro-content p {
   margin-bottom: 12px;
+  font-size: .8rem;
 }
 
 .cta-btn {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5da63), to(#e2cc84));
-  background-image: linear-gradient(#f5da63, #e2cc84);
-  background-color: #f1cb7a;
+  background-color: #FF0000;
   text-transform: capitalize;
   text-decoration: none;
   font-size: .9rem;
   font-weight: bold;
-  color: #974b1e;
+  color: white;
   font-family: sans-serif;
   padding: 12px;
   border: 1px solid #75341c;
@@ -1033,6 +1035,12 @@ https://flickity.metafizzy.co
   position: relative;
 }
 
+.about-intro > p:first-child span {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
 .about-intro > p:first-child:before, .about-intro > p:first-child:after {
   content: url(../images/Untitled-1.png);
   position: absolute;
@@ -1095,7 +1103,7 @@ https://flickity.metafizzy.co
 }
 
 .about-intro-sp_text {
-  font-size: 1rem;
+  font-size: .9rem;
   padding-right: 32px;
 }
 
@@ -1151,7 +1159,7 @@ https://flickity.metafizzy.co
 
 .about-text abbr {
   text-transform: capitalize;
-  font-weight: bold;
+  font-size: .8rem;
 }
 
 .about-text p {
@@ -1160,7 +1168,7 @@ https://flickity.metafizzy.co
 
 aside {
   width: 40%;
-  font-weight: bold;
+  font-size: .8rem;
 }
 
 aside img {

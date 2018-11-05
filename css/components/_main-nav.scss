@@ -7,6 +7,7 @@
 .main-nav a {
     color: #61391e;
     text-decoration: none;
+    font-weight: bold;
     }
 .nav-link + .nav-link  {
     margin-left: 12px;
@@ -23,7 +24,7 @@
     
 
 .is-active {
-    border-bottom: 2px solid rgb(233, 191, 101);;
+    border-bottom: 2px solid red;
     }
     
 .dropdown-content {
