@@ -37,13 +37,13 @@
   bottom: 0;
   }
 
-.dropdown-content a{
+.dropdown-content a {
   font-weight: bold;
-}
-
-.dropdown-content a:hover{
+  }
+	
+.dropdown-content a:hover {
   background: rgb(231, 26, 26);
-}
+  }
 
 @media (max-width: 700px) {
     .main-nav {
@@ -79,7 +79,7 @@
         }
       }
   .is-active {
-      // border-bottom: 2;
+      // border-bottom: 0;
       background-color: rgba(204, 204, 204, 0.289);
       }
     .menu-trigger {
@@ -121,7 +121,7 @@
 
 .dropdown-content a:hover {
     color: white;
-    background-color:#FF0000;
+		background-color:#FF0000;
     }
 
 .dropdown:hover .dropdown-content {

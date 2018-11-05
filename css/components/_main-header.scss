@@ -1,9 +1,10 @@
 .main-header {
     display: flex;
     padding-bottom: 24px;
+    padding-top: 48px;
     width: 100%;
     max-width: 100%;
-    margin-top: 96px;
+    margin-top: 48px;
     position: relative;
     transition: .3s margin-bottom;
     background-color: inherit;
@@ -15,10 +16,12 @@
         background-repeat: repeat-x;
         background-position: top 0;
         position: absolute;
-        top: -46px;
+        top: -10px;
         left: -64px;
         right: -64px;
-        height: 48px;
+        height: 10px;
+        // filter: drop-shadow(0 -8px 5px rgba(34, 34, 34, 0.616));
+        box-shadow: -10px 0 5px -5px #222;
         }
     &:after {
         content: '';
@@ -31,7 +34,7 @@
 
 .enquiry{
     position: absolute;
-    top: 0;
+    top: 48px;
     right: 0;
     // outline: 1px solid red;
     font-family: sans-serif;
