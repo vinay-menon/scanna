@@ -1,8 +1,10 @@
 body {
     background: url(../images/bg.jpg);
+    background-size: contain;
     background-color: #e00000;
     background-repeat: no-repeat;
-     }
+    background-size: fixed;
+    }
 
 
 hr {

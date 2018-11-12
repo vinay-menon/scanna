@@ -46,8 +46,6 @@
     z-index: 1;
 
     img {
-        
-    outline: 2px solid green;
         max-width: 100%;
         width: 100%;
         }
@@ -104,3 +102,27 @@
             }
         }
     }
+
+// excellent flux slider doesn't scale
+// insert images at specific junctions. 
+// best we can do with the resources and knowledge at hand
+
+.fluxslider {
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    }
+
+.fluxslider .images {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }
+    
+.fluxslider .images img {
+    display: none;
+    }
+    

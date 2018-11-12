@@ -14,7 +14,7 @@
                 <div class="logo">
                     <img src="images/scanna-logo-new.png" alt="">
                 </div>
-                <div class="enquiry">Enquiries: +91 9895682557</div>
+                <div class="enquiry">For enq please make a call:<br> <span>+91 9895682557</span></div>
                 <nav class="main-nav">
                     <a href="index.html" class="nav-link is-active">Home</a>
                     <a href="about-us.html" class="nav-link">About us</a>
@@ -59,20 +59,28 @@
              <img src="images/window-l.png" alt=""> 
              <img src="images/window-r.png" alt=""> 
           </div>
-          <div class="slider-content">
-              <img src="images/frnd-baner.jpg" alt="">
+          <div class="slider-content" id="slider">
+                <img src="images/home-page/homeimg1.jpg" alt="" />
+                <img src="images/home-page/homeimg2.jpg" alt="" />
+                <img src="images/home-page/homeimg3.jpg" alt="" />
+                <img src="images/home-page/homeimg4.jpg" alt="" />
+                <img src="images/home-page/homeimg5.jpg" alt="" />
+                <img src="images/home-page/homeimg6.jpg" alt="" />
+                <img src="images/home-page/homeimg7.jpg" alt="" />
+                <img src="images/home-page/homeimg8.jpg" alt="" />
+                <img src="images/home-page/homeimg9.jpg" alt="" />
           </div>
           <img src="images/slider-bg.jpg" alt="product-slider"class="slider-bg">
        </section>     
       <section class="about-intro">
-          <p><span> We are the latest dry fruits manufacturer coming up with the delicious, nutritious, healthier and hygienic products for you.</span></p>
+          <p class="reveal-on-scroll"><span> We are the latest dry fruits manufacturer coming up with the delicious, nutritious, healthier and hygienic products for you.</span></p>
 
           <div class="about-intro-sp">
-            <p class="about-intro-sp_title">
+            <p class="about-intro-sp_title reveal-on-scroll">
                 Why eat dry fruits?
             </p>
-            <p class="about-intro-sp_text">
-                Because it retains the nutritional value and has long shelf life. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis magnam voluptatum aut officiis eligendi. Reprehenderit est voluptate, libero accusantium quae suscipit? Eius in est quia sint, quasi accusamus soluta quae.
+            <p class="about-intro-sp_text reveal-on-scroll">
+                Dried fruit has a long tradition of use dating back to the fourth millennium BC in Mesopotamia, and is prized because of its sweet taste, nutritive value, and long shelf life. 
             </p>
           </div>
       </section> 
@@ -80,40 +88,54 @@
       <hr class="section-seperator">
 
       <section class="disply">
-          <a class="disply-item" href="dates.html">
+          <a class="disply-item reveal-on-scroll" href="dates.html">
                 <img src="images/bimage/drid.jpg" alt="">
               <div class="disply-item-desc-hover" >
-                  Dates
+                    <div class="display-item-title">Dates</div>
+                    <div class="display-item-disc">Dates can be your health booster in everyday life. As a whole dates are the rare fruits which is capable of providing overall development for the body and inner system.   
+                    </div>  
               </div>
           </a>
-          <a class="disply-item" href="nuts.html">
+          <a class="disply-item reveal-on-scroll" href="nuts.html">
                 <img src="images/bimage/nuts.jpg" alt="">
               <div class="disply-item-desc-hover" >
-                  Nuts
+                    <div class="display-item-title">Nuts</div>
+                    <div class="display-item-disc">The high quality premium nuts are potential choice. A real health booster.     
+                    </div> 
               </div>
           </a>
-          <a class="disply-item" href="dried-fruits.html">
+          <a class="disply-item reveal-on-scroll" href="dried-fruits.html">
                 <img src="images/bimage/dri-frt-bg.jpg" alt="">
               <div class="disply-item-desc-hover" >
-                  Dried Fruits 
+                    <div class="display-item-title">Dried Fruits</div>
+                    <div class="display-item-disc">You find many varieties of dry fruits which are refined and kept.They include fruits from other lands with fresh taste and multi layered health benefits.
+                    </div> 
               </div>
           </a>
-          <a class="disply-item" href="chocolates.html">
+          <a class="disply-item reveal-on-scroll" href="chocolates.html">
                 <img src="images/bimage/chocolate.jpg" alt="">
               <div class="disply-item-desc-hover">
-                  Chocolates
-              </div>
+                    <div class="display-item-title">Chocolates</div>
+                    <div class="display-item-disc">Have a bite and melt with it. Our imported chocolates are a real feast. Under one roof a world of tasty chocolates.
+                    </div>
+              </div>    
           </a>
-          <a class="disply-item" href="gifts.html">
+          <a class="disply-item reveal-on-scroll" href="gifts.html">
                 <img src="images/bimage/gift-bg.jpg" alt="">
               <div class="disply-item-desc-hover">
-                  Gifts
+                    <div class="display-item-title">Gifts</div>
+                    <div class="display-item-disc">
+                        Confectionaries, assortment of sweets, a box of our finest dried fruits, and more. 
+                    </div>
               </div>
           </a>
-          <a class="disply-item" href="quickbiriyani.html">
+          <a class="disply-item reveal-on-scroll" href="quickbiriyani.html">
                 <img src="images/bimage/biriyani-bg.jpg" alt="">
               <div class="disply-item-desc-hover">
-                  Quick Biriyani
+                    <div class="display-item-title">Quick Biriyani</div>
+                    <div class="display-item-disc">
+                        An innovative product that will change your approach to preparing biriyani at home.
+                    </div>
               </div>
           </a>
       </section>
@@ -146,6 +168,21 @@ Just add up all the ingredients as recommended (in the Pack) in and cook. And yo
           </div>
       </footer>
     
+    <script src="js/jq.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/flux.min.js"></script>
+
+    <script>
+        // excellent flux slider doesn't scale
+        // insert images at specific junctions. 
+        // best we can do with the resources and knowledge at hand
+
+        $(function(){                
+            window.f = new flux.slider('.slider-content', {
+                pagination: false,
+                transitions: ["bars3d", "warp", "tiles3d"]
+            });
+        });
+    </script>
 </body>
 </html>

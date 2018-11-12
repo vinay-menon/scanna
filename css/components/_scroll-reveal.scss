@@ -1,0 +1,45 @@
+.reveal-on-scroll {
+    opacity: 0;
+    transition: .5s;
+    transition-delay: .5s;
+
+    &.is-blah {
+        opacity: 1;
+        }
+    }
+
+.about-intro-sp_title.reveal-on-scroll {
+    transform: scale(0, 0);
+
+    &.is-blah {
+        transform: none;
+        }
+    }
+    
+.disply-item.reveal-on-scroll {
+    opacity: 0;
+    transition: .5s;
+    }
+.disply-item.is-blah {
+    opacity: 1;
+
+    &:nth-child(2) {
+        transition-delay: .3s;
+        }
+
+    &:nth-child(3) {
+        transition-delay: .6s;
+        }
+
+    &:nth-child(4) {
+        transition-delay: .9s;
+        }
+
+    &:nth-child(5) {
+        transition-delay: 1.2s;
+        }
+
+    &:nth-child(6) {
+        transition-delay: 1.5s;
+        }
+    }
