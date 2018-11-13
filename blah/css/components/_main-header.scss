@@ -1,0 +1,130 @@
+.main-header {
+    display: flex;
+    padding-bottom: 24px;
+    padding-top: 48px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 48px;
+    position: relative;
+    transition: .3s margin-bottom;
+    background-color: inherit;
+    z-index: 9;
+
+   &:before {
+        content: '';        
+        background-image: url(../images/teeth-top.png);
+        background-repeat: repeat-x;
+        background-position: top 0;
+        position: absolute;
+        top: -10px;
+        left: -64px;
+        right: -64px;
+        height: 10px;
+        }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0; bottom: 20px; right: 0; left: 0;
+        background-color: inherit;
+        z-index: -1;
+        }
+    }   
+
+.enquiry{
+    position: absolute;
+    top: 32px;
+    right: 0;
+    outline: 1px solid red;
+    font-family: sans-serif;
+    color: #FF0000;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: .9rem;
+    
+    br{
+        display: none;
+        }
+
+    span{
+        font-size: 1rem;
+        font-weight: bold;
+        }
+    } 
+
+
+@media (max-width: 749px) {
+    .main-header:before {
+        left: -32px;
+        right: -32px;
+        }
+    }
+.home-header .header-wrapper {
+    width: 100%;
+    display: flex;
+    // max-width: calc(100% - 20px);
+    margin: auto;
+    }
+
+@media(max-width: 700px){
+    .header-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding-bottom: 32px;
+        }
+
+    .logo {
+        margin-bottom: 12px;
+        }
+
+    .enquiry {
+        top: auto;
+        bottom: 12px;
+        left: 0; right: 0;
+        text-align: center;
+        } 
+    }
+
+
+@media(max-width: 466px){
+    .logo {
+        margin-bottom: 0;
+        }
+    }
+@media(max-width: 700px){
+    .main-header {
+        margin-top: 0;
+        padding-top: 24px;
+        }
+    }
+
+    @media(max-width: 516px){
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        }
+    .header-wrapper {
+        padding-bottom: 0;
+        }
+    .enquiry{
+        position: static;
+        margin: 12px 0 12px 0;
+        align-self: center;
+        order: -1;
+        text-align: center;
+
+        br{
+            display: block;
+        }
+        }
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 12px;
+        }
+    }
+    
+
+
+
+

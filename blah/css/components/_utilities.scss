@@ -1,0 +1,16 @@
+.section-seperator {
+    background-image: url(../images/line.png);
+    background-position: 50% 50%;
+    display: block;
+    height: 37px;
+    margin-bottom: 48px;
+
+    &.section-seperator--eop {
+        margin-bottom: 0;
+        margin-top: 32px;
+        }
+    }
+
+.malayalam-text {
+    font-family: "malayalam-font";
+    }

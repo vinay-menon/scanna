@@ -13,6 +13,8 @@
     border: 1px solid rgb(198, 174, 64);
     text-align: center;
     transition: .1s;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
   }
   .prod-item:before {
     content: url(../images/Untitled-1.png);
@@ -39,6 +41,7 @@
     width: 100%;
     display: block;
     border-radius: 8%;
+    margin-bottom: 6px;
   }
 .prod-item img:hover {
     z-index: .4;

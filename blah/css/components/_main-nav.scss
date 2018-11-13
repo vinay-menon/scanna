@@ -1,0 +1,131 @@
+.main-nav {
+    margin-top: auto;
+    // width: 400px;
+    margin-left: auto;
+    display: flex;
+    }  
+.main-nav a {
+    color: #61391e;
+    text-decoration: none;
+    font-weight: bold;
+    }
+.nav-link + .nav-link  {
+    margin-left: 12px;
+    }
+
+.nav-link {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-family: serif;
+    font-family: 'Playfair Display', serif;
+    padding: 6px;
+    text-align: center; 
+    }
+    
+
+.is-active {
+    border-bottom: 2px solid red;
+    }
+    
+.dropdown-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    // opacity: 0;
+    display: flex;
+    transition: .3s;
+    pointer-events: none;
+    z-index: -9;
+    }
+
+.dropdown-content a {
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    // font-weight: bold;
+    background-image: linear-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
+                );
+    
+}
+.dropdown-content a:first-child{
+    background-image: radial-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
+                ),url(../images/bimage/drid.jpg );
+    
+}
+.dropdown-content a:nth-child(2){
+    background-image: radial-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
+                ),url(../images/bimage/nuts.jpg);
+}
+.dropdown-content a:nth-child(3){
+    background-image: radial-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
+                ),url(../images/bimage/dri-frt-bg.jpg);
+}
+.dropdown-content a:nth-child(4){
+    background-image:radial-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
+                ),url(../images/bimage/chocolate.jpg);
+}
+.dropdown-content a:nth-child(5){
+    background-image: radial-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
+                ),url(../images/bimage/gift-bg.jpg);
+}
+.dropdown-content a:nth-child(6){
+    background-image: radial-gradient(
+                rgba(247, 111, 0, 0.534),
+                rgba(0, 0, 0, 0.452)
+                ),url(../images/bimage/biriyani-bg.jpg);
+}
+
+.blah .dropdown-content {
+    top: calc(100% - 24px);
+    opacity: 1;
+    pointer-events: auto;
+    // z-index: 9;
+    }
+
+.dropdown-content a {
+    flex: 1;
+    padding: 24px;
+    }
+
+.dropdown img {
+    width: 12px;
+    }
+
+.dropdown-content a:hover {
+    background-color:rgb(233, 191, 101);
+    }
+
+// .dropdown:hover .dropdown-content {
+//     // display: block;
+//     opacity: 1;
+//     pointer-events: auto;
+//     }
+
+@media(max-width: 634px){
+    .main-nav {
+        margin-right: auto;
+        }
+    }
+    
+// @media(max-width: 466px){
+//     .main-nav {
+//         // display: none;
+//         // margin-left: auto;
+//         }
+//     }
